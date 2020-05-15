@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ContinuousScrollableImageView">
+        <attr name="imageSrc" format="reference" />
+        <attr name="direction"/>
+        <attr name="duration" format="integer" />
+        <attr name="scaleType"/>
+    </declare-styleable>
+
+
+    <attr name="direction">
+        <enum name="up" value="0" />
+        <enum name="right" value="1" />
+        <enum name="down" value="2" />
+        <enum name="left" value="3" />
+    </attr>
+
+    <attr name="scaleType">
+        <enum name = "matrix" value="0"/>
+        <enum name = "fitXy" value="1"/>
+        <enum name = "fitStart" value="2"/>
+        <enum name = "fitCenter" value="3"/>
+        <enum name = "fitEnd" value="4"/>
+        <enum name = "center" value="5"/>
+        <enum name = "centerCrop" value="6"/>
+        <enum name = "centerInside" value="7"/>
+    </attr>
+
+
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundImageView">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="WheelView">
+        <attr name="pickerview_gravity_s">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="pickerview_textSize" format="dimension"/>
+        <attr name="pickerview_textColorOut" format="color"/>
+        <attr name="pickerview_textColorCenter" format="color"/>
+        <attr name="pickerview_dividerColor" format="color"/>
+        <attr name="pickerview_lineSpacingMultiplier" format="float"/>
+    </declare-styleable>
+
+
+<!--    <declare-styleable name="WheelView">-->
+<!--        <attr name="pickerview_gravity_s">-->
+<!--            <enum name="center" value="17"/>-->
+<!--            <enum name="left" value="3"/>-->
+<!--            <enum name="right" value="5"/>-->
+<!--        </attr>-->
+<!--        <attr name="pickerview_textSize" format="dimension"/>-->
+<!--        <attr name="pickerview_textColorOut" format="color"/>-->
+<!--        <attr name="pickerview_textColorCenter" format="color"/>-->
+<!--        <attr name="pickerview_dividerColor" format="color"/>-->
+<!--        <attr name="pickerview_lineSpacingMultiplier" format="float"/>-->
+<!--    </declare-styleable>-->
+
+
+
+    <declare-styleable name="slideswitch">
+        <attr name="themeColor" format="color" />
+        <attr name="isOpen" format="boolean" />
+        <attr name="isShowScroll" format="boolean" />
+        <attr name="shape">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AbsSpinner">
+        <attr name="entries"/>
+    </declare-styleable>
+
+
+</resources>

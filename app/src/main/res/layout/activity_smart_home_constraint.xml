@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_myscene"
+        android:layout_width="104dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/drawable_btn_background"
+        android:gravity="center"
+        android:text="我的场景"
+        android:textColor="#242424"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_myhouse"
+        android:layout_width="104dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/drawable_btn_background"
+        android:gravity="center"
+        android:text="我的房间"
+        android:textColor="#242424"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/img_ss"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_smart_homes"></ImageView>
+
+
+    <android.support.constraint.Group
+        android:id="@+id/rl_smarthome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:constraint_referenced_ids="btn_myscene,btn_myhouse,img_ss"></android.support.constraint.Group>
+
+    <android.support.constraint.Group
+        android:id="@+id/rl_topsmart"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        app:constraint_referenced_ids="top_img_s,drop"></android.support.constraint.Group>
+
+    <ImageView
+        android:id="@+id/top_img_s"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/top_img_smart_home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/drop"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/down"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#079D9D">
+
+
+    <com.massky.greenlandvland.View.BounceZoomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_bg">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="200dp"
+                android:layout_height="match_parent">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/riv_intelligenceenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    app:riv_border_color="#8e8e8e"
+                    app:riv_border_width="1dp"
+                    app:riv_corner_radius_top_left="8dp"
+                    app:riv_corner_radius_top_right="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_intelligenceenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="智能家居"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_intelligenceenter"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Smart home"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/riv_invitevisitor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="95dp"
+                    android:scaleType="fitXY"
+                    app:riv_border_color="#8e8e8e"
+                    app:riv_border_width="1dp"
+                    app:riv_corner_radius_top_left="8dp"
+                    app:riv_corner_radius_top_right="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_invitevisitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="125dp"
+                    android:text="安全定位"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_invitevisitor"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="Safe location"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/riv_monitoring"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="190dp"
+                    android:scaleType="fitXY"
+                    app:riv_border_color="#8e8e8e"
+                    app:riv_border_width="1dp"
+                    app:riv_corner_radius_top_left="8dp"
+                    app:riv_corner_radius_top_right="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_monitoring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="215dp"
+                    android:text="家庭监控"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_monitoring"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="Home Monitoring"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/riv_environmentmonitor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="285dp"
+                    android:scaleType="fitXY"
+                    app:riv_border_color="#8e8e8e"
+                    app:riv_border_width="1dp"
+                    app:riv_corner_radius_top_left="8dp"
+                    app:riv_corner_radius_top_right="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_environmentmonitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="305dp"
+                    android:text="智慧门禁"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_environmentmonitor"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="Intelligent access control"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.massky.greenlandvland.View.BounceZoomScrollView>
+
+    <ImageView
+        android:id="@+id/iv_opendoor"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="39dp"
+        android:layout_marginRight="19dp"
+        android:src="@drawable/opendoor" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/sliding_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sliding" />
+        <Spinner
+            android:id="@+id/spinner_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dropDownVerticalOffset="40dp"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:layout_centerInParent="true"
+            android:popupBackground="@drawable/spinner_background"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_plot"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textSize="20sp"/>-->
+    </RelativeLayout>
+
+</RelativeLayout>

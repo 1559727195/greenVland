@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282828">
+    <com.massky.greenlandvland.View.RoundImageView
+        android:id="@+id/iv_self"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="31dp"
+        android:layout_centerHorizontal="true"
+        app:border_inside_color="#d6d6d6"
+        app:border_thickness="3dp"
+        android:background="@drawable/oval_24"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开心快乐"
+        android:textColor="#d4d3d3"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_self"
+        android:layout_marginTop="15dp"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp">
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/drawable_home_selector"
+            android:layout_marginLeft="20dp"/>
+        <View
+            android:id="@+id/line1"
+            android:layout_width="78dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:background="#898989"
+            android:layout_below="@id/iv_home"/>
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:textSize="12dp"
+            android:textColor="@drawable/color_lefttext_selector"
+            android:layout_alignLeft="@id/line1"/>
+    </RelativeLayout>
+
+    
+
+    <RelativeLayout
+        android:id="@+id/rl_tenement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp">
+    <ImageView
+        android:id="@+id/iv_tenement"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/drawable_tenement_selector"
+        android:layout_marginLeft="20dp" />
+    <View
+        android:id="@+id/line2"
+        android:layout_width="78dp"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:background="#898989"
+        android:layout_below="@id/iv_tenement"/>
+    <TextView
+        android:id="@+id/tv_tenement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="物业"
+        android:textSize="12dp"
+        android:textColor="@drawable/color_lefttext_selector"
+        android:layout_alignLeft="@id/line2" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_forum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="316dp">
+        <ImageView
+            android:id="@+id/iv_forum"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/drawable_forum_selector"
+            android:layout_marginLeft="20dp" />
+        <View
+            android:id="@+id/line3"
+            android:layout_width="78dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:background="#898989"
+            android:layout_below="@id/iv_forum"/>
+        <TextView
+            android:id="@+id/tv_forum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="论坛"
+            android:textSize="12dp"
+            android:textColor="@drawable/color_lefttext_selector"
+            android:layout_alignLeft="@id/line3" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_openrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="364dp">
+        <ImageView
+            android:id="@+id/iv_openrecord"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/drawable_openrecord_selector"
+            android:layout_marginLeft="20dp" />
+        <View
+            android:id="@+id/line5"
+            android:layout_width="78dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:background="#898989"
+            android:layout_below="@id/iv_openrecord"/>
+        <TextView
+            android:id="@+id/tv_openrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开门记录"
+            android:textSize="12dp"
+            android:textColor="@drawable/color_lefttext_selector"
+            android:layout_alignLeft="@id/line5"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_mine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="412dp">
+        <ImageView
+            android:id="@+id/iv_mine"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/drawable_mine_selector"
+            android:layout_marginLeft="20dp" />
+        <View
+            android:id="@+id/line4"
+            android:layout_width="78dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:background="#898989"
+            android:layout_below="@id/iv_mine"/>
+        <TextView
+            android:id="@+id/tv_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            android:textSize="12dp"
+            android:textColor="@drawable/color_lefttext_selector"
+            android:layout_alignLeft="@id/line4"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

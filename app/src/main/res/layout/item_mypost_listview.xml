@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.massky.greenlandvland.View.swipelayout.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:clickable="true"
+    android:paddingBottom="1dp"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nianyue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:singleLine="false"
+            android:text="年月"
+            android:textColor="#B2B2B2"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/ri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/nianyue"
+            android:text="日"
+            android:textColor="#636363"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/ri"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/image"
+            android:text="标题"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/title"
+            android:layout_below="@id/title"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="内容" />
+
+        <TextView
+            android:id="@+id/style"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/image"
+            android:layout_alignLeft="@id/title"
+            android:background="@drawable/drawable_stylebg"
+            android:gravity="center"
+            android:text="分类"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/style"
+            android:src="@drawable/discuss" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image"
+            android:layout_toRightOf="@id/iv_comment"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="时间"
+            android:textColor="#A7A6A7" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#ff4a57"
+        android:text="删除"
+        android:textColor="@android:color/white"/>
+
+</com.massky.greenlandvland.View.swipelayout.SwipeMenuLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- <item android:state_pressed="true" android:color="#46a6e2" />
+	<item android:state_checked="true" android:color="#46a6e2" />
+	<item android:color="#ffffff" /> -->
+	<item android:state_selected="true" android:color="#4CC9C3" />
+	<item android:state_selected="false" android:color="@color/cardview_dark_background" />
+	<item android:color="@color/cardview_dark_background" />
+</selector>

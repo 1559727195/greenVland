@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_smarthome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_smart_homes">
+        <Button
+            android:id="@+id/btn_myscene"
+            android:layout_width="104dp"
+            android:layout_height="30dp"
+            android:background="@drawable/drawable_btn_background"
+            android:text="我的场景"
+            android:textSize="15sp"
+            android:textColor="#242424"
+            android:gravity="center"
+            android:layout_marginLeft="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="91dp"/>
+        <Button
+            android:id="@+id/btn_myhouse"
+            android:layout_width="104dp"
+            android:layout_height="30dp"
+            android:background="@drawable/drawable_btn_background"
+            android:text="我的房间"
+            android:textSize="15sp"
+            android:textColor="#242424"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="91dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_topsmart"
+        android:layout_width="match_parent"
+        android:layout_height="206dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/top_img_smart_home"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:id="@+id/drop"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/down" />
+    </RelativeLayout>
+</RelativeLayout>

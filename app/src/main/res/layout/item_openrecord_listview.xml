@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp">
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017年1月11号 19:01"
+            android:textColor="#a1a1a1"
+            android:textSize="12sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电梯 (10)"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:textColor="#a1a1a1"
+            android:textSize="12sp"
+            android:layout_marginLeft="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/statues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开门成功"
+            android:textColor="#666666"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

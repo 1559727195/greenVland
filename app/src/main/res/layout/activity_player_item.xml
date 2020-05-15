@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="44dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/roomname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="房间名"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/share" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="#000000"></RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/llVertical"
+            android:layout_width="match_parent"
+            android:layout_height="300dip"
+            android:background="#f6f7f8"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1b1b1b">
+
+                <ImageView
+                    android:id="@+id/iv_voice"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/drawable_voice_select" />
+
+                <ImageView
+                    android:id="@+id/iv_fullscreen"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/fullscreen" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/drawable_photo_selector" />
+
+                <ImageView
+                    android:id="@+id/iv_talkback"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/drawable_talkback_selector" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

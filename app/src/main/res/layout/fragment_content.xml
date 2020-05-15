@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/viewgroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/air_rels"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/imag_air"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="38dp"
+                    android:background="@drawable/bottom_yuan"
+                    android:text="空调"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/kong_panel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imag_air"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/smart_bottom"
+                    android:orientation="horizontal"
+                    app:layout_widthPercent="80%">
+
+                    <TextView
+                        android:id="@+id/zhire_kongtiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="制热" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/wendu_kongtiao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="25℃"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/low_fengsu_kongtiao_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="低风速"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/zhire_kongtiao_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="制热"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/low_fengsu_kongtiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="低风速" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/kong_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kong_panel"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal"
+                    app:layout_widthPercent="50%">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_mode_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/moshi_kongtiao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/smart_mode" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/close_kongtiao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/smart_close" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wendu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kong_mode"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/yuanjiao"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/wendu_add_kongtiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/smart_add" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="温度"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/wendu_delete_kongtiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/smart_del" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fengsu_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wendu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/yuanjiao">
+
+                    <ImageView
+                        android:id="@+id/fengsu_add_kongtiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/smart_add" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="风速"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/fengsu_delete_kongtiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/smart_del" />
+                </LinearLayout>
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <!--    sensor   -->
+            <LinearLayout
+                android:id="@+id/ll_led_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <Button
+                    android:id="@+id/bt_upled"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="38dp"
+                    android:background="@drawable/bottom_yuan"
+                    android:text="主卧灯"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="284dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/background">
+
+                    <ImageView
+                        android:id="@+id/led"
+                        android:layout_width="70dp"
+                        android:layout_height="86dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/drawable_led_selector" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_led"
+                    android:layout_width="70dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/drawable_onoff_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sensor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <Button
+                    android:id="@+id/btn_sensor"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="38dp"
+                    android:background="@drawable/bottom_yuan"
+                    android:text="人体感应"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="284dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/background">
+
+                    <ImageView
+                        android:id="@+id/sensor_renti_img"
+                        android:layout_width="70dp"
+                        android:layout_height="86dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/drawable_renti_selector" />
+
+
+
+                </RelativeLayout>
+
+                <ImageView
+
+                    android:layout_width="70dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/drawable_onoff_selector"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kong_panel"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/btn_sensor_open"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="25dp"
+                            android:background="@drawable/bg_round"
+                            android:text="启用"
+                            android:textColor="@color/text_select_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/btn_sensor_close"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:background="@drawable/bg_round"
+                            android:text="不启用"
+                            android:textColor="@color/text_select_color" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/linear_reset"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/btn_reset"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_round"
+                        android:text="复位"
+                        android:textColor="@color/text_select_color" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_pm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <Button
+                    android:id="@+id/btn_pm"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="38dp"
+                    android:background="@drawable/bottom_yuan"
+                    android:text="PM2.5"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="284dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:background="@drawable/background">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal"
+                       >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="温度" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="pm2.5"
+
+                             />
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="湿度" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/temp_txt"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0℃" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:id="@+id/pm_txt"
+                                android:gravity="center"
+                                android:text="0"
+
+                                />
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/hum_txt"
+                            android:gravity="center"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_curtains_detial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <Button
+                    android:id="@+id/bt_upcurtains"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="38dp"
+                    android:background="@drawable/bottom_yuan"
+                    android:text="窗帘"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="284dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/background">
+
+                    <ImageView
+                        android:id="@+id/iv_curtains"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/in_out_sha_linear"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/clothcurtains"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/bg_round"
+                        android:gravity="center"
+                        android:text="布帘"
+                        android:textColor="@drawable/color_text_selector"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/lacecurtains"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/bg_round"
+                        android:gravity="center"
+                        android:text="纱帘"
+                        android:textColor="@drawable/color_text_selector"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/iv_close"
+                        android:layout_width="49dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/drawable_inside_selector" />
+
+                    <Button
+                        android:id="@+id/iv_stop"
+                        android:layout_width="49dp"
+                        android:layout_height="49dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/drawable_stop_selector" />
+
+                    <Button
+                        android:id="@+id/iv_start"
+                        android:layout_width="49dp"
+                        android:layout_height="49dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/drawable_outside_selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_dimmer_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <Button
+                    android:id="@+id/bt_updimmerled"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="38dp"
+                    android:background="@drawable/bottom_yuan"
+                    android:text="调光"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="284dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/background">
+
+                    <TextView
+                        android:id="@+id/tv_dimmer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#555555"
+                        android:textSize="40sp" />
+                </RelativeLayout>
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:maxHeight="5dp"
+                    android:progressDrawable="@drawable/layer_progress"
+                    android:thumb="@drawable/shape_circle" />
+
+                <ImageView
+                    android:id="@+id/iv_dimmer"
+                    android:layout_width="70dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/drawable_onoff_selector" />
+            </LinearLayout>
+
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_1"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@drawable/bg_yuan"-->
+            <!--android:gravity="center"-->
+            <!--android:text="空调"-->
+            <!--android:textColor="@drawable/drawable_logintext_selector"-->
+            <!--android:textSize="15sp" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_2"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/bg_yuan"-->
+            <!--android:gravity="center"-->
+            <!--android:text="主卧灯"-->
+            <!--android:textColor="@drawable/drawable_logintext_selector"-->
+            <!--android:textSize="15sp" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_3"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/bg_yuan"-->
+            <!--android:gravity="center"-->
+            <!--android:text="窗帘"-->
+            <!--android:textColor="@drawable/drawable_logintext_selector"-->
+            <!--android:textSize="15sp" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_4"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/bg_yuan"-->
+            <!--android:gravity="center"-->
+            <!--android:text="地灯"-->
+            <!--android:textColor="@drawable/drawable_logintext_selector"-->
+            <!--android:textSize="15sp" />-->
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
